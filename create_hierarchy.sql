@@ -27,4 +27,4 @@ where position_index like '1;1;%';
 
 /* Todos no nível imediatamente abaixo do Diretor Dev */
 select * from "hierarchy" 
-where parent_id = 1;
+where parent_id = 2;
