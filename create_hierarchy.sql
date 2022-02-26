@@ -2,12 +2,12 @@ create table hierarchy (
 	id serial primary key,
 	name varchar(255),
 	position_index text,
-	position_level numeric(19),
+	tree_level numeric(19),
 	parent_id numeric(19)
 );
 /* position_level = (número de repetições do separador ; no campo position_index)+ 1 */
 
-insert into hierarchy(id, name, position_index, position_level, parent_id) values 
+insert into hierarchy(id, name, position_index, tree_level, parent_id) values 
 (1, 'Presidente', '1', 1, null),
 (2, 'Diretor de Dev', '1;1', 2, 1),
 (3, 'Diretor de Sup', '1;2', 2, 1),
