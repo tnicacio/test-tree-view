@@ -5,7 +5,7 @@ create table hierarchy (
 	tree_level numeric(19),
 	parent_id numeric(19)
 );
-/* position_level = (número de repetições do separador ; no campo position_index)+ 1 */
+/* tree_level = (número de repetições do separador ; no campo position_index)+ 1 */
 
 insert into hierarchy(id, name, position_index, tree_level, parent_id) values 
 (1, 'Presidente', '1', 1, null),
